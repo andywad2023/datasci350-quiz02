@@ -27,3 +27,8 @@
   334  git add . && git commit -m "Add site pages and freeze"
   335  quarto publish gh-pages
   336  history | tail -n 100 > commands.txt
+  337  nano commands.txt
+  338  git add . && git commit -m "Add command log"
+  339  git push
+  340  nano commands.txt
+  341  history | tail -n 10 >> commands.txt
