@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "Do films with larger budgets generate higher box-office revenues? Figure 1 shows the relationship between production budgets and worldwide revenues.\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Production Budget (Million USD)\")\nplt.ylabel(\"Worldwide Revenue (Million USD)\")\nplt.title(\"Budget vs. Revenue\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Production Budget VS Worldwide Box-Office Revenue"
+  },
+  {
+    "objectID": "budget-revenue.html#film-budgets-and-revenue",
+    "href": "budget-revenue.html#film-budgets-and-revenue",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "Do films with larger budgets generate higher box-office revenues? Figure 1 shows the relationship between production budgets and worldwide revenues.\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Production Budget (Million USD)\")\nplt.ylabel(\"Worldwide Revenue (Million USD)\")\nplt.title(\"Budget vs. Revenue\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Production Budget VS Worldwide Box-Office Revenue"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Box Office Numbers",
+    "section": "",
+    "text": "This dataset includes 104 well-known films from 1980 to 2025, with approximate budgets, worldwide revenues, runtimes, and ratings. All money-related numbers are in millions in usd, and runtime is in minutes."
+  },
+  {
+    "objectID": "index.html#dataset-description",
+    "href": "index.html#dataset-description",
+    "title": "Box Office Numbers",
+    "section": "",
+    "text": "This dataset includes 104 well-known films from 1980 to 2025, with approximate budgets, worldwide revenues, runtimes, and ratings. All money-related numbers are in millions in usd, and runtime is in minutes."
+  },
+  {
+    "objectID": "index.html#links-to-three-analysis-pages",
+    "href": "index.html#links-to-three-analysis-pages",
+    "title": "Box Office Numbers",
+    "section": "Links to Three Analysis Pages",
+    "text": "Links to Three Analysis Pages\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films"
+  },
+  {
+    "objectID": "index.html#ai-use",
+    "href": "index.html#ai-use",
+    "title": "Box Office Numbers",
+    "section": "AI Use",
+    "text": "AI Use\nI mainly did it myself. When I have code or commands that I am not sure, I will go check with Chatgpt and make sure they are correct before I run those commands, as terminal commands are hard to reverse."
+  },
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "Is there a relationship between film runtime and rating? Figure 1 shows the rating of each film against its runtime in minutes.\n\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (Minutes)\")\nplt.ylabel(\"IMDb Rating\")\nplt.title(\"Runtime vs. Rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Film Runtime VS IMDb Rating"
+  },
+  {
+    "objectID": "runtime-rating.html#runtime-and-ratings",
+    "href": "runtime-rating.html#runtime-and-ratings",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "Is there a relationship between film runtime and rating? Figure 1 shows the rating of each film against its runtime in minutes.\n\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (Minutes)\")\nplt.ylabel(\"IMDb Rating\")\nplt.title(\"Runtime vs. Rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Film Runtime VS IMDb Rating"
+  },
+  {
+    "objectID": "runtime-rating.html#mean-rating-by-decade",
+    "href": "runtime-rating.html#mean-rating-by-decade",
+    "title": "Runtime and Ratings",
+    "section": "Mean Rating by Decade",
+    "text": "Mean Rating by Decade\nThe following table shows the mean rating for films released in each decade.\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nmean_ratings = films.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\nmean_ratings\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "The Bond Films",
+    "section": "",
+    "text": "The first James Bond film in the dataset was released in 1995, and the last was released in 2021."
+  },
+  {
+    "objectID": "bond.html#james-bond-films",
+    "href": "bond.html#james-bond-films",
+    "title": "The Bond Films",
+    "section": "",
+    "text": "The first James Bond film in the dataset was released in 1995, and the last was released in 2021."
+  },
+  {
+    "objectID": "bond.html#revenue-over-time",
+    "href": "bond.html#revenue-over-time",
+    "title": "The Bond Films",
+    "section": "Revenue Over Time",
+    "text": "Revenue Over Time\nFigure 1 shows how James Bond box office revenues have changed over time.\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Release Year\")\nplt.ylabel(\"Worldwide Revenue (Million USD)\")\nplt.title(\"James Bond Revenue Over Time\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Worldwide Box Office Revenue of James Bond Films Over Time"
+  }
+]
