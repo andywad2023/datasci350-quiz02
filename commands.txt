@@ -1,0 +1,29 @@
+  307  gh repo fork danilofreire/datasci350-quiz02
+  308  ls
+  309  cd datasci350-quiz02
+  310  quarto create project website .
+  311  ls -a
+  312  echo '/_site/' >> .gitignore
+  313  echo '__pycache__/' >> .gitignore
+  314  cat .gitignore
+  315  git add .gitignore && git commit -m "Add gitignore"
+  316  nano _quarto.yml
+  317  cat _quarto.yml
+  318  rm about.qmd
+  319  cat _quarto.yml
+  320  nano _quarto.yml
+  321  cat _quarto.yml
+  322  nano index.qmd
+  323  cat index.qmd
+  324  touch budget-revenue.qmd
+  325  nano budget-revenue.qmd
+  326  touch runtime-rating.qmd
+  327  nano runtime-rating.qmd
+  328  touch bond.qmd
+  329  nano bond.qmd
+  331  nano _quarto.yml
+  332  quarto render
+  333  ls -a
+  334  git add . && git commit -m "Add site pages and freeze"
+  335  quarto publish gh-pages
+  336  history | tail -n 100 > commands.txt
