@@ -1,0 +1,34 @@
+---
+title: "The Bond Films"
+jupyter: python3
+---
+
+```{python}
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+bond = films[films["franchise"] == "James Bond"]
+```
+
+## James Bond Films
+
+The first James Bond film in the dataset was released in `{python} int(bond["year"].min())`, and the last was released in `{python} int(bond["year"].max())`.
+
+## Revenue Over Time
+
+@fig-bond-revenue shows how James Bond box office revenues have changed over time.
+
+```{python}
+#| label: fig-bond-revenue
+#| fig-cap: "Worldwide Box Office Revenue of James Bond Films Over Time"
+#| echo: true
+
+plt.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Release Year")
+plt.ylabel("Worldwide Revenue (Million USD)")
+plt.title("James Bond Revenue Over Time")
+plt.show()
+```

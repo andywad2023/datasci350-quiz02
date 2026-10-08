@@ -1,0 +1,29 @@
+---
+title: "Budget and Revenue"
+jupyter: python3
+---
+
+```{python}
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+## Film Budgets and Revenue
+
+Do films with larger budgets generate higher box-office revenues? @fig-budget-revenue shows the relationship between production budgets and worldwide revenues.
+
+```{python}
+#| label: fig-budget-revenue
+#| fig-cap: "Production Budget VS Worldwide Box-Office Revenue"
+#| echo: true
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Production Budget (Million USD)")
+plt.ylabel("Worldwide Revenue (Million USD)")
+plt.title("Budget vs. Revenue")
+plt.show()
+```
+

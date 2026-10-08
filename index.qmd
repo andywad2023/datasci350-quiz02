@@ -1,0 +1,26 @@
+---
+title: "Box Office Numbers"
+jupyter: python3
+---
+
+```{python}
+#| echo: false
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+```
+
+## Dataset Description
+
+This dataset includes 104 well-known films from 1980 to 2025, with approximate budgets, worldwide revenues, runtimes, and ratings. All money-related numbers are in millions in usd, and runtime is in minutes.
+
+## Links to Three Analysis Pages
+
+- [Budget and Revenue](budget-revenue.qmd)
+- [Runtime and Ratings](runtime-rating.qmd)
+- [The Bond Films](bond.qmd)
+
+## AI Use
+
+I mainly did it myself. When I have code or commands that I am not sure, I will go check with Chatgpt and make sure they are correct before I run those commands, as terminal commands are hard to reverse. 

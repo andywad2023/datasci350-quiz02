@@ -1,0 +1,12 @@
+{
+  "hash": "35a3f83dec7abb7ddd732d4e20a8b929",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Budget and Revenue\"\njupyter: python3\n---\n\n\n\n## Film Budgets and Revenue\n\nDo films with larger budgets generate higher box-office revenues? @fig-budget-revenue shows the relationship between production budgets and worldwide revenues.\n\n::: {#cell-fig-budget-revenue .cell execution_count=2}\n``` {.python .cell-code}\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Production Budget (Million USD)\")\nplt.ylabel(\"Worldwide Revenue (Million USD)\")\nplt.title(\"Budget vs. Revenue\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Production Budget VS Worldwide Box-Office Revenue](budget-revenue_files/figure-html/fig-budget-revenue-output-1.png){#fig-budget-revenue width=602 height=449}\n:::\n:::\n\n\n",
+    "supporting": [
+      "budget-revenue_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

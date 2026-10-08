@@ -1,0 +1,12 @@
+{
+  "hash": "ee0ac7baf3877e4a2522263fdf6b9aa3",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Box Office Numbers\"\njupyter: python3\n---\n\n\n\n## Dataset Description\n\nThis dataset includes 104 well-known films from 1980 to 2025, with approximate budgets, worldwide revenues, runtimes, and ratings. All money-related numbers are in millions in usd, and runtime is in minutes.\n\n## Links to Three Analysis Pages\n\n- [Budget and Revenue](budget-revenue.qmd)\n- [Runtime and Ratings](runtime-rating.qmd)\n- [The Bond Films](bond.qmd)\n\n## AI Use\n\nI mainly did it myself. When I have code or commands that I am not sure, I will go check with Chatgpt and make sure they are correct before I run those commands, as terminal commands are hard to reverse. \n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
